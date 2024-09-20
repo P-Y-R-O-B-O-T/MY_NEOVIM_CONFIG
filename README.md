@@ -3,7 +3,7 @@
 
 ## MOTIONS
 | **KEYMAPPING** | **EFFECT** |
-| ---------- | ------ |
+| -------------- | ---------- |
 | `UP/DOWN,LEFT/RIGHT` | Move cursor |
 | `CTRL-u/ CTRL-d` | Half page up/down |
 | `b / w` | Prev/next word |
@@ -18,23 +18,69 @@
 
 ## INSERT MODE
 | **KEYMAPPING** | **EFFECT** |
-| ---------- | ------ |
+| -------------- | ---------- |
 | `i` | Insert mode |
 | `C / cc` | Change to end of/current line |
 | `o / O` | Insert below/above the line |
 
 ## NORMAL MODE
 | **KEYMAPPING** | **EFFECT** |
-| ---------- | ------ |
+| -------------- | ---------- |
 | `r` | Replace one character |
 | `R` | Replace mode |
 | `u / Nu` | Undo one/N changes |
 | `CTRL-r / n CTRL-r` | Redo one/N changes |
 | `J` | Join next line with current |
+| `> / <` | Shift text right/left |
+| `ggvG` | Select all text |
+
+## VISUAL MODE
+| **KEYMAPPING** | **EFFECT** |
+| -------------- | ---------- |
+| `v` | Enter visual mode |
+| `V` | Enter visual line mode |
+| `CTRL-v` | Enter visual block mode |
+| `ggvG` | Select all text |
+| `d` | Delete selection |
+| `s` | Replace selection |
+| `y` | Yank selection |
+
+## CUT and PASTE
+| **KEYMAPPING** | **EFFECT** |
+| -------------- | ---------- |
+| `x` | Delete character |
+| `p / P` | Paste before/after |
+| `xp` | Swap 2 adjacent characters |
+| `D` | Delete to end of line |
+| `dw` | Delete word |
+| `dd` | Delete line |
+| `ddp` | Swap 2 lines |
+| `yy` | Yank line |
+| `"*p / "+p` | Paste from system clipboard |
+| `"*y / "+y` | Paste to system clipboard |
+| ``
+
+## REPEATING
+| **KEYMAPPING** | **EFFECT** |
+| -------------- | ---------- |
+| `.` | Repeat last command |
+| `;` | Repeat latest f, F, t, T |
+| `.` | Repeat latest f, F, t, T reversed |
+| `&` | Repeat last `:s` |
+| `@:` | Repeat a command-line command |
+
+## MACROS
+| **KEYMAPPING** | **EFFECT** |
+| -------------- | ---------- |
+| `qi` | Record macro i |
+| `q` | Stop recording macro |
+| `@i` | Run macro i |
+| `7@i` | Run macro i 7 times |
+| `@@` | Repeat last macro |
 
 ## SAVE and EXIT
 | **KEYMAPPING** | **EFFECT** |
-| ---------- | ------ |
+| -------------- | ---------- |
 | `:wq / :xx / ZZ` | Save and quit |
 | `:wqa` | Write and quit all files |
 | `:q! / ZQ` | Force quit |
