@@ -144,6 +144,78 @@
 | `yip` | Yank inner paragraph |
 | `yap` | Yank paragraph (including newline) |
 
+## SRARCH and REPPLACE
+### SEARCH
+| **KEYMAPPING** | **EFFECT** |
+| -------------- | ---------- |
+| `/TEXT` | Search forward |
+| `/TEXT\c` | Search forward case sensitive |
+| `?TEXT` | Search backward |
+| `n` | Next matching search pattern |
+| `N` | Previous match |
+| `*` | Search for current word forward |
+| `#` | Search for current word backward |
+
+### RANGES
+| **KEYMAPPING** | **EFFECT** |
+| -------------- | ---------- |
+| `%` | Entire file |
+| `’<,’>` | Current selection |
+| `5` | Line 5 |
+| `5,10` | Lines 5 to 10 |
+| `$` | Last line |
+| `2,$` | Lines 2 to Last |
+| `.` | Current line |
+| `,3` | Next 3 lines |
+| `-3,` | Forward 3 lines |
+
+### FLAGS
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `g` | Replace all occurrences |
+| `i` | Ignore case |
+| `I` | Don't ignore case |
+| `c` | Confirm each substitution |
+
+### REPLACE LINE
+> [!TIP]
+> FORMAT : `:[range]s/{pattern}/{str}/[flags]`
+
+| **KEYMAPPING** | **EFFECT** |
+| -------------- | ---------- |
+| `:s/old/new` | Replace first |
+| `:s/old/new/g` | Replace all |
+| `:s/\vold/new/g` | Replace all with regex |
+| `:s/old/new/gc` | replace all (Confirm) |
+| `:s/old/new/i` | Ignore case replace first |
+| `:N,Ms/old/new/g` | Replace between lines N-M |
+
+### REPLACE FILE
+> [!TIP]
+> FORMAT : `:%s/{pattern}/{str}/[flags]`
+
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `:%s/old/new` | Replace first |
+| `:%s/old/new/g` | Replace all |
+| `:%s/old/new/gc` | Replace all (Confirm) |
+| `:%s/old/new/gi` | Replace all (ignore case) |
+| `:%s/\vold/new/g` | Replace all with regex |
+
+### GLOBAL COMMAND
+> [!TIP]
+> FORMAT : `:[range]g/{pattern}/[command]`
+
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `:g/foo/d` | Delete lines containing foo |
+| `:g!/foo/d` | Delete lines not containing foo |
+| `:g/^\s*$/d` | Delete all blank lines |
+| `:g/foo/t$` | Copy lines containing foo to EOF |
+| `:g/foo/m$` | Move lines containing foo to EOF |
+| `:g/^/m0` | Reverse a file |
+| `:g/^/t.` | Duplicate every line |
+
 ## SAVE and EXIT
 | **KEYMAPPING** | **EFFECT** |
 | -------------- | ---------- |
@@ -157,3 +229,4 @@
 
 ## OTHERS
 * `!`
+* `/\v\d+`
