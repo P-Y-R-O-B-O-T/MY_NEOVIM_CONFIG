@@ -99,7 +99,7 @@
 | `cc` | Change current line |
 | `yy` | Yank current line |
 | `d/WORD` | Delete until word |
-| `dfx` | Delete until `x` char |
+| `dfCHARACTER` | Delete until `x` char |
 | `Ndd` | Delete N lines |
 | `dNw` | Delete N words |
 | `dNj` | Delete N lines downwards |
