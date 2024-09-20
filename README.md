@@ -1,36 +1,44 @@
-# MY_NEOVIM_CONFIG
-My NEOVIM config
+# CHEATSHEET
+![](ZZZ/ZZZ.jpg)
 
-* Install powerline fonts
-* Install nerd fonts
-* Install patch fonts
+## MOTIONS
+| KEYMAPPING | EFFECT |
+| ---------- | ------ |
+| `UP/DOWN,LEFT/RIGHT` | Move cursor |
+| `CTRL-u/ CTRL-d` | Half page up/down |
+| `b / w` | Prev/next word |
+| `ge / e` | End of previous/next word |
+| `0 / $` | Start/end of line |
+| `^` | Start of line (non blank) |
+| `FCHARACTER / fCHARACTER` | Goto prev/next `CHARACTER` |
+| `\| / N\|` | Move to first/N th column |
+| `gg / G` | Goto first/last line |
+| `:N` | Goto N th line |
+| `{ / }` | Goto previous/next empty line |
 
-# Install Powerline Fonts
-* Install powerline and fonts using pip using these commands
-```sh
-sudo apt-get install python3-pip
-```
-```sh
-sudo pip3 install powerline-status
-```
-```sh
-sudo apt-get install fonts-powerline
-```
-* Enable/Start powerline by adding lines given below at the end of .bashrc file
-```sh
-# load powerline
-if [ -f `which powerline-daemon` ]; then
-    powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-fi
-if [ -f /usr/local/lib/python3.8/dist-packages/powerline/bindings/bash/powerline.sh ]; then
-    source /usr/local/lib/python3.8/dist-packages/powerline/bindings/bash/powerline.sh
-fi
-```
+## INSERT MODE
+| KEYMAPPING | EFFECT |
+| ---------- | ------ |
+| `i` | Insert mode |
+| `C / cc` | Change to end of/current line |
+| `o / O` | Insert below/above the line |
 
-* Also consider https://github.com/powerline/fonts
+## NORMAL MODE
+| KEYMAPPING | EFFECT |
+| ---------- | ------ |
+| `r` | Replace one character |
+| `R` | Replace mode |
+| `u / Nu` | Undo one/N changes |
+| `CTRL-r / n CTRL-r` | Redo one/N changes |
+| `J` | Join next line with current |
 
-# Install Nerd Fonts
-* Download nerd fonts from https://www.nerdfonts.com/ and paste ttf(font files) in ./fonts directory of system
-* Use webdevicons and ubuntu nerd fonts
+## SAVE and EXIT
+| KEYMAPPING | EFFECT |
+| ---------- | ------ |
+| `:wq / :xx / ZZ` | Save and quit |
+| `:wqa` | Write and quit all files |
+| `:q! / ZQ` | Force quit |
+| `:qa` | Quit all files |
+| `:qa!` | Force quit all files |
+| `:sav FILE_NAME` | Save current file and start editing `FILE_NAME` |
+| `:w !sudo tee %` | Write ot readonly file |
