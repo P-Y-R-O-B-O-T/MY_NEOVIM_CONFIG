@@ -247,6 +247,97 @@
 | `:v/./,/./` | Compress blank lines into a blank line |
 | `:g/<p1>/,/<p2>` | Delete inclusively from `<p1>` to `<p2>` |
 
+## MISCELLANEOUS
+### CASE
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `vU` | Uppercase character |
+| `vu` | Lowercase character |
+| `~` | Toggle case character |
+| `viw` | Uppercase word |
+| `viw` | Lowercase word |
+| `viw` | Toggle case word |
+| `VU / gUU` | Uppercase line |
+| `Vu / guu` | Lowercase line |
+| `V~ / g~~` | Toggle case line |
+| `gggUG` | Uppercase all text |
+| `ggguG` | Lowercase all text |
+| `ggg~G` | Toggle case all text |
+
+### JUMPING
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `CTRL-` | Go back to previous |
+| `CTRL-i` | Go forward |
+| `gf` | Go to file in cursor |
+| `ga` | Display hex, ascii value |
+
+### NAVIGATING
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `%` | Nearest/matching `{[()]}` |
+| `[( \| [{` | Previous ( or { |
+| `]) \| ]{` | Next ) or } |
+| `[m` | Previous method start |
+| `[M` | Previous method end |
+
+### COUNTERS
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `CTRL-a` | Increase number |
+| `CTRL-x` | Decrease number |
+
+### FORMATTING
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `:ce N` | Center lines between N columns |
+| `:ri N` | Right-align lines at N columns |
+| `:le` | Left-align lines |
+
+
+### TAGS
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `:tag CLASSNAME` | Jump to first definition of Classname |
+| `CTRL-]` | Jump to definition |
+| `g]` | See all definitions |
+| `CTRL-t` | Go back to last tag |
+| `CTRL-o / CTRL-i` | Back/forward |
+| `:tselect CLASSNAME` | Find definitions of Classname |
+| `:tjump CLASSNAME` | Find definitions of Classname (auto-select 1st) |
+
+### CALCULATOR
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `CTRL-r = 7*7` | Shows the result |
+| `CTRL-r = 10/2` | Shows the result |
+
+### MARKS
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| ``` `^ ``` | Last position of cursor in insert mode |
+| ``` `. ``` | Last change in current buffer |
+| ``` `" ``` | Last exited current buffer |
+| ``` `0 ``` | In last file edited |
+| ``` '' ``` | Back to line in current buffer where jumped from |
+| ``` `` ``` | Back to position in current buffer where jumped from |
+| ``` `[ ``` | To beginning of previously changed or yanked text |
+| ``` `] ``` | To end of previously changed or yanked text |
+| ``` `< ``` | To beginning of last visual selection |
+| ``` `> ``` | TO end of last visual selection |
+| ``` mCHARACTER ``` | Mark this cursor position as `CHARACTER` |
+| ``` `CHARACTER ``` | Jump to the cursor position `CHARACTER` |
+| ``` 'CHARACTER ``` | Jump to the beginning of the line with position `CHARACTER` |
+| ``` d'CHARACTER ``` | Delete from current line to line of mark `CHARACTER` |
+| ``` d`CHARACTER ``` | Delete from current position to position of mark `CHARACTER` |
+| ``` c'CHARACTER ``` | Change text from current line to line of `CHARACTER` |
+| ``` y`CHARACTER ``` | Yank text from current position to position of `CHARACTER` |
+| `:marks` | List all current marks |
+| `:delm CHARACTER` | Delete mark `CHARACTER` |
+| `:delm a-d` | Delete marks a, b, c, d |
+| `:delm abc` | Delete marks a, b, c |
+
+
 ## SAVE and EXIT
 | **KEYMAPPING** | **EFFECT** |
 | -------------- | ---------- |
