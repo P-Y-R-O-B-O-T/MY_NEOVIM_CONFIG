@@ -118,7 +118,7 @@
 | `s` | Sentence |
 | `[({<` | A [], (), or {} block |
 | `])}>` | A [], (), or {} block |
-| `'"\`` | A quoted string |
+| ` '"\` ` | A quoted string |
 | `b` | A block [( |
 | `B` | A block in [{ |
 
