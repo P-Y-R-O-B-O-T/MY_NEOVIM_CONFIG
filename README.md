@@ -216,6 +216,38 @@
 | `:g/^/m0` | Reverse a file |
 | `:g/^/t.` | Duplicate every line |
 
+### SUBSTITUTION EXPRESSION (MAGIC)
+| **KEYMAPPINGS** | **EFFECT** |
+| --------------- | ---------- |
+| `& \| \0` | Replace with the whole matched |
+| `\1...\9` | Replace with the group 0-9 |
+| `\u` | Uppercase next letter |
+| `\U` | Uppercase following characters |
+| `\l` | Lowercase next letter |
+| `\L` | Lowercase following characters |
+| `\e` | End of \u, \U, \l and \L |
+| `\E` | End of \u, \U, \l and \L |
+
+#### EXAMPLES
+| **EXPRESSION** | **EFFECT** |
+| -------------- | ---------- |
+| `:s/a\|b/xxx\0xxx/g` | Modifies "a b" to "xxxaxxx xxxbxxx" |
+| `:s/test/\` | Modifies "test" to "TEST FILE" |
+| `:s/\(test\)/\U\1` | Modifies "test" to "TEST file" |
+| `:s/\v([abc])([efg])/\2\1/` | Modifies "af fa bg" to "fa fa gb" |
+| `:s/\v\w+/\u\0/g` | Modifies "bla bla"  to "Bla Bla" |
+| `:s/\v([ab])|([cd])/\1x` | Modifies "a b c d"  to "ax bx x x" |
+| `:%s/.*/\L` | Modifies "HTML" to "html" |
+| `:s/\v<(.)(\w*)/\u\1\L\2` | Make every first letter of a word uppercase |
+| `:%s/^\(.*\)\n\1/\` | Remove duplicate lines |
+| `:%s/<\/\=\(\w\+\)\>/\U&` | Convert HTML-Tags to uppercase |
+| `:g/^pattern/s/$/myte` | Find and append text to the end |
+| `:g/pattern/nor` | Run a macro on matching lines |
+| `/^\(.*\)\(\r\?\n\1\)\` | View the duplicates lines |
+| `/\v^(.*)(\r?\n\1)` | View the duplicates lines (very magic) |
+| `:v/./,/./` | Compress blank lines into a blank line |
+| `:g/<p1>/,/<p2>` | Delete inclusively from `<p1>` to `<p2>` |
+
 ## SAVE and EXIT
 | **KEYMAPPING** | **EFFECT** |
 | -------------- | ---------- |
