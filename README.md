@@ -2,7 +2,7 @@
 ![](ZZZ/ZZZ.jpg)
 
 ## MOTIONS
-| KEYMAPPING | EFFECT |
+| **KEYMAPPING** | **EFFECT** |
 | ---------- | ------ |
 | `UP/DOWN,LEFT/RIGHT` | Move cursor |
 | `CTRL-u/ CTRL-d` | Half page up/down |
@@ -17,14 +17,14 @@
 | `{ / }` | Goto previous/next empty line |
 
 ## INSERT MODE
-| KEYMAPPING | EFFECT |
+| **KEYMAPPING** | **EFFECT** |
 | ---------- | ------ |
 | `i` | Insert mode |
 | `C / cc` | Change to end of/current line |
 | `o / O` | Insert below/above the line |
 
 ## NORMAL MODE
-| KEYMAPPING | EFFECT |
+| **KEYMAPPING** | **EFFECT** |
 | ---------- | ------ |
 | `r` | Replace one character |
 | `R` | Replace mode |
@@ -33,7 +33,7 @@
 | `J` | Join next line with current |
 
 ## SAVE and EXIT
-| KEYMAPPING | EFFECT |
+| **KEYMAPPING** | **EFFECT** |
 | ---------- | ------ |
 | `:wq / :xx / ZZ` | Save and quit |
 | `:wqa` | Write and quit all files |
