@@ -236,7 +236,7 @@
 | `:s/\(test\)/\U\1` | Modifies "test" to "TEST file" |
 | `:s/\v([abc])([efg])/\2\1/` | Modifies "af fa bg" to "fa fa gb" |
 | `:s/\v\w+/\u\0/g` | Modifies "bla bla"  to "Bla Bla" |
-| `:s/\v([ab])|([cd])/\1x` | Modifies "a b c d"  to "ax bx x x" |
+| `:s/\v([ab])\|([cd])/\1x` | Modifies "a b c d"  to "ax bx x x" |
 | `:%s/.*/\L` | Modifies "HTML" to "html" |
 | `:s/\v<(.)(\w*)/\u\1\L\2` | Make every first letter of a word uppercase |
 | `:%s/^\(.*\)\n\1/\` | Remove duplicate lines |
