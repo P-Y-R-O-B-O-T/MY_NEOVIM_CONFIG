@@ -337,7 +337,6 @@
 | `:delm a-d` | Delete marks a, b, c, d |
 | `:delm abc` | Delete marks a, b, c |
 
-
 ## SAVE and EXIT
 | **KEYMAPPING** | **EFFECT** |
 | -------------- | ---------- |
