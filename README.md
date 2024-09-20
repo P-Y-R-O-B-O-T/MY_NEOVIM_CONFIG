@@ -43,7 +43,6 @@
 | `s` | Replace selection |
 | `y` | Yank selection |
 | `=` | Formats code |
-| `dx` | Delete selection |
 
 ## CUT and PASTE
 | **KEYMAPPING** | **EFFECT** |
