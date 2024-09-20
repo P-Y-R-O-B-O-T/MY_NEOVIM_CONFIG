@@ -34,3 +34,7 @@ fi
 ### Install Nerd Fonts
 * Download nerd fonts from https://www.nerdfonts.com/ and paste ttf(font files) in ./fonts directory of system
 * Use webdevicons and ubuntu nerd fonts
+
+### OTHER SOURCES
+* [TRICKS](https://vimtricks.com/p/category/tips-and-tricks/)
+* [QUICKREF](https://quickref.me/vim.html) 
