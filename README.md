@@ -122,6 +122,28 @@
 | `b` | A block [( |
 | `B` | A block in [{ |
 
+### TEXT OBJECT OPERATIONS
+| **KEYMAPPING** | **OBJECT** |
+| -------------- | ---------- |
+| `vi"` | Select inner quotes `"..."` |
+| `va"` | Select quotes `"..."` |
+| `vi[` | Select inner brackets `[...]` |
+| `va[` | Select brackets `[...]` |
+| `viw` | Select inner word |
+| `vip` | Select inner paragraph |
+| `vipip` | Select more paragraph |
+| `diw` | Delete inner word |
+| `dis` | Delete inner sentence |
+| `di"` | Delete in quotes |
+| `da"` | Delete in quotes (including quotes) |
+| `dip` | Delete a paragraph |
+| `ciw` | Change inner word |
+| `ci"` | Change inner quotes |
+| `cit` | Change inner tags (HTML) |
+| `cip` | Change inner paragraph |
+| `yip` | Yank inner paragraph |
+| `yap` | Yank paragraph (including newline) |
+
 ## SAVE and EXIT
 | **KEYMAPPING** | **EFFECT** |
 | -------------- | ---------- |
