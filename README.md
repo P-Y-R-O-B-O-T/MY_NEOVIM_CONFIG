@@ -337,6 +337,31 @@
 | `:delm a-d` | Delete marks a, b, c, d |
 | `:delm abc` | Delete marks a, b, c |
 
+## REGISTERS
+| **KEYMAPPING** | **KEYMAPPING** |
+| -------------- | -------------- |
+| `:reg` | See all registers and their content |
+| `REGISTERp` | Paste from that register |
+| `REGISTERy` | Yank to that register |
+| `REGISTERd` | Delete to that register |
+
+### AVAILABLE REGISTERS ARE
+* **UNNAMED REGISTERS**: `""` Filled when we delete using commands or yank something
+* **STACK REGISTERS**: `"0`, `"1`, `"2`, `"3`, `"4`, `"5`, `"6`, `"7`, `"8`, `"9`
+    - `"0`: Used to yank by default
+    - `"1`: Used by delete and change by default
+* **NAMED REGISTERS**: `"CHARACTER`, Filled when we explicitly tell vim to use
+* **SYSTEM CLIPBOARD REGISTERS**: `"+` and `"*`, Have synchronization between system clipboard
+* **SMALL DELETE REGISTER**: `"-`, Contain small deletions
+* **FILE REGISTER**: `"%`, Contains file name
+* **ALTERNATE FILE REGISTER**: `"#`, Contains alternate file name
+* **EXPRESSION REGISTER**: `"=`, Stores vim expressions
+* **READ ONLY REGISTER**:
+    - `":`: Stores the last command executed
+    - `".`: Stores last inserted text
+* **LAST SEARCH PATTERN REGISTER**: `"/`, Stores last searched pattern
+* **BLACK HOLE REGISTER**: `"_`, nothing happens when we write to this and nothing is returned when we read it
+
 ## SAVE and EXIT
 | **KEYMAPPING** | **EFFECT** |
 | -------------- | ---------- |
@@ -347,6 +372,19 @@
 | `:qa!` | Force quit all files |
 | `:sav FILE_NAME` | Save current file and start editing `FILE_NAME` |
 | `:w !sudo tee %` | Write ot readonly file |
+
+## TIPS and TRICKS
+> [!TIP]
+> ### COMMENT TOGGLE
+> * Select text in visual mode
+> * Then hit `LEADER /`
+
+> [!TIP]
+> ### REPLAY CHANGES / REPLACE WORDS
+> * Search for the word/pattern
+> * Run change in word command `ciw`, write the changes `ESC`
+> * Press `n`
+> * Press `.` to repeat the last command and changes
 
 ## OTHERS
 * `!`
