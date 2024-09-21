@@ -32,6 +32,7 @@
 | `CTRL-r / n CTRL-r` | Redo one/N changes |
 | `J` | Join next line with current |
 | `> / <` | Shift text right/left |
+| `CTRL-o` | Get into normal mode temporarily and run commands |
 
 ## VISUAL MODE
 | **KEYMAPPING** | **EFFECT** |
@@ -143,7 +144,7 @@
 | `yip` | Yank inner paragraph |
 | `yap` | Yank paragraph (including newline) |
 
-## SRARCH and REPPLACE
+## SEARCH and REPLACE
 ### SEARCH
 | **KEYMAPPING** | **EFFECT** |
 | -------------- | ---------- |
