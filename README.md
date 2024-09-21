@@ -99,7 +99,7 @@
 | `cc` | Change current line |
 | `yy` | Yank current line |
 | `d/WORD` | Delete until word |
-| `dfCHARACTER` | Delete until `x` char |
+| `dfCHARACTER` | Delete until character |
 | `Ndd` | Delete N lines |
 | `dNw` | Delete N words |
 | `dNj` | Delete N lines downwards |
@@ -130,6 +130,9 @@
 | `vi[` | Select inner brackets `[...]` |
 | `va[` | Select brackets `[...]` |
 | `viw` | Select inner word |
+| `viW` | Select any continous text |
+| `vaBRACE` | Select content including brace |
+| `viBRACE` | Select content excluding brace |
 | `vip` | Select inner paragraph |
 | `vipip` | Select more paragraph |
 | `diw` | Delete inner word |
@@ -143,6 +146,8 @@
 | `cip` | Change inner paragraph |
 | `yip` | Yank inner paragraph |
 | `yap` | Yank paragraph (including newline) |
+| `yaBRACE` | Yank content including brace |
+| `yiBRACE` | Yank content excluding brace |
 
 ## SEARCH and REPLACE
 ### SEARCH
@@ -375,6 +380,12 @@
 | `:w !sudo tee %` | Write ot readonly file |
 
 ## TIPS and TRICKS
+> [!TIP]
+> ### GET HELP
+> * `:h PARTIAL_COMMAND`
+> * `:h TEXT_OBJECT`
+> * `:h KEY`
+
 > [!TIP]
 > ### COMMENT TOGGLE
 > * Select text in visual mode
