@@ -387,6 +387,10 @@
 > * Press `n`
 > * Press `.` to repeat the last command and changes
 
+> [!TIP]
+> ### SPELL CHECK
+> * `:set spell` and `:set nospell`
+
 ## OTHERS
 * `!`
 * `/\v\d+`
