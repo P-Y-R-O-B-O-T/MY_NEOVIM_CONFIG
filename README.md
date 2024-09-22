@@ -402,6 +402,19 @@
 > ### SPELL CHECK
 > * `:set spell` and `:set nospell`
 
-## OTHERS
-* `!`
-* `/\v\d+`
+> [!TIP]
+> ### VISUAL MODE CURSOR TOGGLE
+> * While having selected text, press `o`
+
+> [!TIP]
+> ### VERTICAL EDITING
+> * Enter visual block edit mode `CTRL-v`
+> * Then press `I` to get into insert mode
+> * Make changes on a single line, then escape `ESC`
+> * Now all the changes are applied to all the lines
+
+> [!TIP]
+> ### INCREMENTAL ARRAY
+> * Select the text objects that have incremental objects(integer)
+> * Then run `gCTRL-aCTRL-a`
+> * All the first incremental objects in all the lines will be incremented
